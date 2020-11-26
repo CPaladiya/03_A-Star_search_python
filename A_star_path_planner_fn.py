@@ -385,7 +385,6 @@ def get_tentative_gScore(self, current, neighbor):
     return self.get_gScore(current) + self.distance(current,neighbor)
 
 
-# In[23]:
 
 
 def heuristic_cost_estimate(self, node):
@@ -394,7 +393,7 @@ def heuristic_cost_estimate(self, node):
     return self.distance(self.goal, node)
 
 
-# In[24]:
+
 
 
 def calculate_fscore(self, node):
@@ -409,7 +408,6 @@ def calculate_fscore(self, node):
 #
 # Now that you've implemented the various functions on scoring, you can record the best path to a given neighbor node from the current node!
 
-# In[25]:
 
 
 def record_best_path_to(self, current, neighbor):
